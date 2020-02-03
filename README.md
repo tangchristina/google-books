@@ -1,6 +1,6 @@
 # google-books
 
-# Google Books Search is a full-stack React-based application that renders components, works with helper/util functions, and utilizes React lifestyle methods to display queried books to the user. Node, Express, and MongoDB is used to assist with backend CRUD operations so that users can save books to review or purchase at a later time.
+Google Books Search is a full-stack React-based application that renders components, works with helper/util functions, and utilizes React lifestyle methods to display queried books to the user. Node, Express, and MongoDB is used to assist with backend CRUD operations so that users can save books to review or purchase at a later time.
 
 # Deployment: 
 
