@@ -17,7 +17,7 @@ class Search extends Component {
     title: "",
     author: "",
     description: "",
-    bookData:{}    
+    bookData: {}    
 }
 
   componentDidMount() {

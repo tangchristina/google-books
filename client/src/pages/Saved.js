@@ -22,6 +22,14 @@ class Saved extends Component {
     this.loadBooks();
   }
 
+  deleteBook = book => {
+    API.deleteBook(book)
+    .then(res => {
+
+    })
+    .catch(err => console.log(err));  
+  }
+
   loadBooks = books => {
     API.getBooks()
       .then(res => {
@@ -43,14 +51,13 @@ class Saved extends Component {
             {" "}
             {this.state.books.map((book) => (
               <ListItem key={book.id}>
-                <img src={book.image}> </img>{" "}
+                {/* //<img src={book.image}> </img>{" "} */}
                 <strong>
                   {" "}
-                  {book.title}
-                  by {book.author}{" "}
+                  {book.title} by {book.author}{" "}
                 </strong>{" "}
                 {book.description}{" "}
-                <DeleteBtn onClick={() => this.deleteBook(book.id)} />{" "}
+                <DeleteBtn onClick={() => this.deleteBook({_id: book.id})} />{" "}
               </ListItem>
             ))}{" "}
           </List>
