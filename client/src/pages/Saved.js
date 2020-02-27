@@ -56,7 +56,8 @@ class Saved extends Component {
                   {book.title} by {book.author}{" "}
                 </strong>{" "}
                 {book.description}{" "}
-                <DeleteBtn onClick={() => this.deleteBook({_id: book.id})} />{" "}
+                <DeleteBtn onClick={() => this.deleteBook({                            
+                            _id: book.id})} />{" "}
               </ListItem>
             ))}{" "}
           </List>
