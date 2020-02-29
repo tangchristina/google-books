@@ -1,4 +1,5 @@
 [build]
+  command = "npm run start"
   publish="path-to-react-app/build"
   base = "path-to-react-app"
 
